@@ -1,2 +1,0 @@
-# onestopalumni
-A prototype
