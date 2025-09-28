@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AlumniConnect - Manage Users</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f6f9;
+    }
+
+    header {
+      background: #004080;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.5em;
+    }
+
+    header nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    header nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    h2 {
+      color: #004080;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .add-user {
+      margin-bottom: 20px;
+      text-align: right;
+    }
+
+    .add-user button {
+      padding: 10px 20px;
+      background: #004080;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .add-user button:hover {
+      background: #0073e6;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    th, td {
+      padding: 12px 15px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    th {
+      background: #004080;
+      color: white;
+    }
+
+    tr:hover {
+      background: #f1f1f1;
+    }
+
+    .action-btn {
+      padding: 6px 12px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      color: white;
+      transition: background 0.3s;
+    }
+
+    .edit-btn {
+      background: #0073e6;
+    }
+
+    .edit-btn:hover {
+      background: #004080;
+    }
+
+    .delete-btn {
+      background: #e60000;
+    }
+
+    .delete-btn:hover {
+      background: #990000;
+    }
+
+    footer {
+      background: #004080;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+      header nav {
+        margin-top: 10px;
+      }
+      .add-user {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>🎓 AlumniConnect Admin</h1>
+  <nav>
+    <a href="admin-dashboard.html">Dashboard</a>
+    <a href="addmin-manage-users.html">Users</a>
+    <a href="addmin-manage-events.html">Events</a>
+    <a href="logout.html">Logout</a>
+  </nav>
+</header>
+
+<div class="container">
+  <h2>Manage Users / Alumni</h2>
+
+  <div class="add-user">
+    <button>Add New User</button>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Full Name</th>
+        <th>Email</th>
+        <th>Batch</th>
+        <th>Course</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>John Doe</td>
+        <td>john.doe@example.com</td>
+        <td>2018</td>
+        <td>Computer Engineering</td>
+        <td>
+          <button class="action-btn edit-btn">Edit</button>
+          <button class="action-btn delete-btn">Delete</button>
+        </td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Jane Smith</td>
+        <td>jane.smith@example.com</td>
+        <td>2019</td>
+        <td>Electrical Engineering</td>
+        <td>
+          <button class="action-btn edit-btn">Edit</button>
+          <button class="action-btn delete-btn">Delete</button>
+        </td>
+      </tr>
+      <!-- Add more users dynamically -->
+    </tbody>
+  </table>
+</div>
+
+<footer>
+  <p>© 2025 AlumniConnect | All rights reserved.</p>
+</footer>
+
+</body>
+</html>

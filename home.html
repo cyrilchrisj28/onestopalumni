@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AlumniConnect - Home</title>
+  <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<body>
+  <style>
+    /* Global */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f9;
+  color: #333;
+}
+
+/* Header */
+.header {
+  background: #004080;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hamburger (hidden by default) */
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(to right, #004080, #0066cc);
+  color: white;
+}
+
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.cta-buttons .btn {
+  padding: 12px 25px;
+  margin: 10px;
+  background: #ffcc00;
+  color: #004080;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.cta-buttons .btn-outline {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+}
+
+.cta-buttons .btn:hover {
+  opacity: 0.8;
+}
+
+/* Features Section */
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 50px 20px;
+  flex-wrap: wrap;
+}
+
+.feature {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1 1 250px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  max-width: 300px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background: #004080;
+  color: white;
+  padding: 15px;
+  margin-top: 50px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+    flex-direction: column;
+    background: #004080;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 150px;
+    padding: 10px;
+  }
+
+  .nav.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+  </style>
+  <!-- Header / Navbar -->
+  <header class="header">
+    <div class="logo">🎓 AlumniConnect</div>
+    <nav class="nav" id="nav-menu">
+      <a href="login.html" style="font-family: 'Times New Roman', Times, serif;">Login</a>
+      <a href="register.html" style="font-family: 'Times New Roman', Times, serif;">Register</a>
+      <a href="about.html" style="font-family: 'Times New Roman', Times, serif;">About</a>
+      <!-- <a herf="contact.html">Contact</a> -->
+    </nav>
+    <div class="hamburger" id="hamburger">☰</div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Welcome to AlumniConnect</h1>
+    <p  style="font-family: 'Times New Roman', Times, serif;">Stay connected with your alumni network, join events, and grow your career.</p>
+    <div class="cta-buttons">
+      <a href="login.html" class="btn" style="font-family: 'Times New Roman', Times, serif;">Login</a>
+      <a href="register.html" class="btn btn-outline" style="font-family: 'Times New Roman', Times, serif;">Register</a>
+      
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features">
+    <div class="feature">
+      <h2 style="font-family: 'Times New Roman', Times, serif;">👥 Connect</h2>
+      <p>Find your classmates, seniors, and alumni from different batches.</p>
+    </div>
+    <div class="feature">
+      <h2  style="font-family: 'Times New Roman', Times, serif;">📅 Events</h2>
+      <p>Join alumni events, reunions, and webinars hosted by your college.</p>
+    </div>
+    <div class="feature">
+      <h2  style="font-family: 'Times New Roman', Times, serif;">💼 Careers</h2>
+      <p>Get job opportunities, mentorship, and career guidance from alumni.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 AlumniConnect | All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Toggle mobile menu
+    const hamburger = document.getElementById("hamburger");
+    const navMenu = document.getElementById("nav-menu");
+
+    hamburger.addEventListener("click", () => {
+      navMenu.classList.toggle("show");
+    });
+  </script>
+</body>
+</html>

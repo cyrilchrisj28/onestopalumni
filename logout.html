@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AlumniConnect - Logout</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #004080, #0073e6);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: white;
+      text-align: center;
+    }
+
+    .logout-box {
+      background: rgba(0,0,0,0.2);
+      padding: 40px 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      font-size: 2em;
+    }
+
+    p {
+      margin-bottom: 30px;
+    }
+
+    a {
+      display: inline-block;
+      padding: 12px 25px;
+      background: #004080;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    a:hover {
+      background: #0073e6;
+    }
+
+    @media (max-width: 500px) {
+      .logout-box {
+        padding: 30px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="logout-box">
+    <h2>Logged Out Successfully</h2>
+    <p>You have been safely logged out of AlumniConnect.</p>
+    <a href="login.html">Go to Login</a>
+  </div>
+</body>
+</html>

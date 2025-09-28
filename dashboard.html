@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AlumniConnect - Dashboard</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f6f9;
+    }
+
+    header {
+      background: #004080;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.5em;
+    }
+
+    header nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    header nav a:hover {
+      text-decoration: underline;
+    }
+
+    .dashboard-container {
+      padding: 30px;
+    }
+
+    .welcome {
+      margin-bottom: 30px;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      color: #004080;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background: #004080;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+      header nav {
+        margin-top: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🎓 AlumniConnect Dashboard</h1>
+    <nav>
+      <a href="profile.html">Profile</a>
+      <a href="events.html">Events</a>
+      <a href="messages.html">Messages</a>
+      <a href="logout.html">Logout</a>
+    </nav>
+  </header>
+
+  <div class="dashboard-container">
+    <div class="welcome">
+      <h2>Welcome back, [User Name] 👋</h2>
+      <p>Select an option below to continue.</p>
+    </div>
+
+    <div class="card-grid">
+      <div class="card">
+        <h3>👥 Connect</h3>
+        <p>Find and connect with alumni from your batch and others.</p>
+      </div>
+      <div class="card">
+        <h3>📅 Events</h3>
+        <p>View and register for upcoming alumni events & reunions.</p>
+      </div>
+      <div class="card">
+        <h3>💼 Careers</h3>
+        <p>Browse job opportunities, internships, and mentorship programs.</p>
+      </div>
+      <div class="card">
+        <h3>📩 Messages</h3>
+        <p>Send and receive messages from your alumni network.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 AlumniConnect | All rights reserved.</p>
+  </footer>
+</body>
+</html>

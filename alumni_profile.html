@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AlumniConnect - Alumni Profile</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f6f9;
+    }
+
+    header {
+      background: #004080;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.5em;
+    }
+
+    header nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    header nav a:hover {
+      text-decoration: underline;
+    }
+
+    .profile-container {
+      max-width: 800px;
+      margin: 40px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .profile-container img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .profile-container h2 {
+      margin: 0;
+      color: #004080;
+    }
+
+    .profile-details {
+      width: 100%;
+    }
+
+    .profile-details p {
+      font-size: 1em;
+      margin: 8px 0;
+    }
+
+    .action-buttons {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 10px;
+    }
+
+    .action-buttons button {
+      padding: 12px 25px;
+      background: #004080;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .action-buttons button:hover {
+      background: #0073e6;
+    }
+
+    footer {
+      background: #004080;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+      header nav {
+        margin-top: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>🎓 AlumniConnect</h1>
+  <nav>
+    <a href="admin-dashboard.html">Dashboard</a>
+    <a href="connections.html">Connections</a>
+    <a href="messages.html">Messages</a>
+    <a href="logout.html">Logout</a>
+  </nav>
+</header>
+
+<div class="profile-container">
+  <img src="https://via.placeholder.com/150" alt="Profile Pic">
+  <h2>John Doe</h2>
+
+  <div class="profile-details">
+    <p><strong>Batch:</strong> 2018</p>
+    <p><strong>Course:</strong> Computer Engineering</p>
+    <p><strong>Email:</strong> john.doe@example.com</p>
+    <p><strong>Phone:</strong> +91 9876543210</p>
+    <p><strong>Address:</strong> 123 Main Street, City, Country</p>
+    <p><strong>About:</strong> Software engineer with 5 years of experience, passionate about mentoring and networking with students and alumni.</p>
+  </div>
+
+  <div class="action-buttons">
+    <button>Connect</button>
+    <button>Send Message</button>
+  </div>
+</div>
+
+<footer>
+  <p>© 2025 AlumniConnect | All rights reserved.</p>
+</footer>
+
+</body>
+</html>

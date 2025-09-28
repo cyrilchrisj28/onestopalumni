@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AlumniConnect - About</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f6f9;
+      color: #333;
+    }
+
+    header {
+      background: #004080;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.5em;
+    }
+
+    header nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    header nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    h2 {
+      color: #004080;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    p {
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .team {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
+    .member {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      width: 250px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .member img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    .member h4 {
+      margin: 5px 0;
+      color: #004080;
+    }
+
+    footer {
+      background: #004080;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+      header nav {
+        margin-top: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>🎓 AlumniConnect</h1>
+  <nav>
+    <a href="home.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="logout.html">Logout</a>
+  </nav>
+</header>
+
+<div class="container">
+  <h2>About AlumniConnect</h2>
+  <p>
+    AlumniConnect is a platform designed to bridge the gap between students and alumni. 
+    Our goal is to foster networking, mentorship, and knowledge sharing within the alumni community.
+  </p>
+  <p>
+    Students can explore career opportunities, connect with experienced alumni, and stay updated 
+    with the latest events organized by their alma mater. Alumni can share experiences, mentor 
+    current students, and contribute to the growth of their institution.
+  </p>
+
+  <h2>Meet the Team</h2>
+  <div class="team">
+    <div class="member">
+      <img src="https://via.placeholder.com/100" alt="Team Member">
+      <h4>Kirthish Kumar S</h4>
+      <p>Lead Developer</p>
+    </div>
+    <div class="member">
+      <img src="https://via.placeholder.com/100" alt="Team Member">
+      <h4>Jane Smith</h4>
+      <p>UI/UX Designer</p>
+    </div>
+    <div class="member">
+      <img src="https://via.placeholder.com/100" alt="Team Member">
+      <h4>Michael Lee</h4>
+      <p>Backend Developer</p>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>© 2025 AlumniConnect | All rights reserved.</p>
+</footer>
+
+</body>
+</html>

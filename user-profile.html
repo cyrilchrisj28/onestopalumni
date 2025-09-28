@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AlumniConnect - My Profile</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f6f9;
+    }
+
+    header {
+      background: #004080;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.5em;
+    }
+
+    header nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    header nav a:hover {
+      text-decoration: underline;
+    }
+
+    .profile-container {
+      max-width: 700px;
+      margin: 40px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #004080;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    label {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    input, select, textarea {
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    button {
+      padding: 12px;
+      background: #004080;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1em;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background: #0073e6;
+    }
+
+    footer {
+      background: #004080;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+      header nav {
+        margin-top: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>🎓 AlumniConnect</h1>
+  <nav>
+    <a href="user_alumni_dashboard.html">Dashboard</a>
+    <a href="connections.html">Connections</a>
+    <a href="events-for-user-alumni.html">Events</a>
+    <a href="user-alumni-messages.html">Messages</a>
+    <a href="logout.html">Logout</a>
+  </nav>
+</header>
+
+<div class="profile-container">
+  <h2>My Profile</h2>
+  <form>
+    <label for="fullName">Full Name</label>
+    <input type="text" id="fullName" value="John Doe">
+
+    <label for="email">Email</label>
+    <input type="email" id="email" value="john.doe@example.com">
+
+    <label for="batch">Batch</label>
+    <input type="text" id="batch" value="2018">
+
+    <label for="course">Course</label>
+    <input type="text" id="course" value="Computer Engineering">
+
+    <label for="phone">Phone</label>
+    <input type="text" id="phone" value="+91 9876543210">
+
+    <label for="address">Address</label>
+    <textarea id="address" rows="3">123 Main Street, City, Country</textarea>
+
+    <label for="about">About</label>
+    <textarea id="about" rows="4">Software engineer with 5 years of experience, passionate about mentoring and networking.</textarea>
+
+    <button type="submit">Save Changes</button>
+  </form>
+</div>
+
+<footer>
+  <p>© 2025 AlumniConnect | All rights reserved.</p>
+</footer>
+
+</body>
+</html>

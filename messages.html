@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AlumniConnect - Messages</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f6f9;
+    }
+
+    header {
+      background: #004080;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.5em;
+    }
+
+    header nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    header nav a:hover {
+      text-decoration: underline;
+    }
+
+    .messages-container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    h2 {
+      color: #004080;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .chat-box {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      max-height: 500px;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .message {
+      padding: 10px;
+      border-radius: 8px;
+      max-width: 70%;
+      word-wrap: break-word;
+    }
+
+    .message.sent {
+      background: #004080;
+      color: white;
+      align-self: flex-end;
+    }
+
+    .message.received {
+      background: #e0e0e0;
+      color: #333;
+      align-self: flex-start;
+    }
+
+    .send-message {
+      margin-top: 20px;
+      display: flex;
+      gap: 10px;
+    }
+
+    .send-message input {
+      flex: 1;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    .send-message button {
+      padding: 10px 20px;
+      background: #004080;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .send-message button:hover {
+      background: #0073e6;
+    }
+
+    footer {
+      background: #004080;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      header nav {
+        margin-top: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>🎓 AlumniConnect</h1>
+  <nav>
+    <a href="/dashboard">Dashboard</a>
+    <a href="/profile">Profile</a>
+    <a href="/events">Events</a>
+    <a href="/logout">Logout</a>
+  </nav>
+</header>
+
+<div class="messages-container">
+  <h2>Messages</h2>
+
+  <div class="chat-box">
+    <div class="message received">
+      Hello! Welcome to AlumniConnect.
+    </div>
+    <div class="message sent">
+      Thank you! Glad to be here.
+    </div>
+    <div class="message received">
+      Connect with alumni, join events, and explore opportunities.
+    </div>
+  </div>
+
+  <div class="send-message">
+    <input type="text" placeholder="Type your message..." />
+    <button>Send</button>
+  </div>
+</div>
+
+<footer>
+  <p>© 2025 AlumniConnect | All rights reserved.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AlumniConnect - Messages</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f6f9;
+    }
+
+    header {
+      background: #004080;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.5em;
+    }
+
+    header nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    header nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    h2 {
+      color: #004080;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .messages-container {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .contacts-list {
+      flex: 1;
+      min-width: 200px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 20px;
+      max-height: 500px;
+      overflow-y: auto;
+    }
+
+    .contacts-list h3 {
+      margin-top: 0;
+      color: #004080;
+    }
+
+    .contact {
+      padding: 10px;
+      border-bottom: 1px solid #eee;
+      cursor: pointer;
+    }
+
+    .contact:hover {
+      background: #f1f1f1;
+    }
+
+    .chat-box {
+      flex: 2;
+      min-width: 300px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      max-height: 500px;
+    }
+
+    .chat-header {
+      background: #004080;
+      color: white;
+      padding: 15px;
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px;
+    }
+
+    .chat-messages {
+      flex: 1;
+      padding: 15px;
+      overflow-y: auto;
+    }
+
+    .chat-input {
+      display: flex;
+      border-top: 1px solid #ccc;
+    }
+
+    .chat-input input {
+      flex: 1;
+      padding: 12px;
+      border: none;
+      border-bottom-left-radius: 12px;
+    }
+
+    .chat-input button {
+      padding: 12px 20px;
+      background: #004080;
+      color: white;
+      border: none;
+      border-bottom-right-radius: 12px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .chat-input button:hover {
+      background: #0073e6;
+    }
+
+    .message {
+      margin-bottom: 10px;
+      padding: 8px 12px;
+      border-radius: 12px;
+      max-width: 70%;
+      word-wrap: break-word;
+    }
+
+    .sent {
+      background: #004080;
+      color: white;
+      align-self: flex-end;
+    }
+
+    .received {
+      background: #e1e1e1;
+      align-self: flex-start;
+    }
+
+    footer {
+      background: #004080;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      .messages-container {
+        flex-direction: column;
+      }
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+      header nav {
+        margin-top: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>🎓 AlumniConnect</h1>
+  <nav>
+    <a href="user_alumni_dashboard.html">Dashboard</a>
+    <a href="connections.html">Connections</a>
+    <a href="events-for-user-alumni.html">Events</a>
+    <a href="logout.html">Logout</a>
+  </nav>
+</header>
+
+<div class="container">
+  <h2>Messages</h2>
+
+  <div class="messages-container">
+    <div class="contacts-list">
+      <h3>Contacts</h3>
+      <div class="contact">John Doe</div>
+      <div class="contact">Jane Smith</div>
+      <div class="contact">Michael Lee</div>
+      <div class="contact">Emily Davis</div>
+    </div>
+
+    <div class="chat-box">
+      <div class="chat-header">
+        Chat with John Doe
+      </div>
+      <div class="chat-messages">
+        <div class="message received">Hello! How are you?</div>
+        <div class="message sent">I'm good, thanks! You?</div>
+      </div>
+      <div class="chat-input">
+        <input type="text" placeholder="Type a message...">
+        <button>Send</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer style="margin-top: 120px;">
+  <p>© 2025 AlumniConnect | All rights reserved.</p>
+</footer>
+
+</body>
+</html>
